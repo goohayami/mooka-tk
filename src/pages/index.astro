@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="よこそ真岡市へ">
 	<main>
-		<h1>真岡に行こう！</h1>
+		<h1><span>真岡</span>へGO!</h1>
 		<p class="instructions">
 		真岡市、四月の平均気温は？
 		</p>
@@ -18,31 +18,31 @@ import Layout from '../layouts/Layout.astro';
 				<td class="item">最低気温</td>
 			</tr>
 			<tr>
-				<td>2018年</td>
+				<td class="item">2018</td>
 				<td class="temp">14.7℃</td>
 				<td class="temp">30.0℃</td>
 				<td class="temp">-0.1℃</td>
 			</tr>
 			<tr>
-				<td>2019年</td>
+				<td class="item">2019</td>
 				<td class="temp">11.4℃</td>
 				<td class="temp">26.6℃</td>
 				<td class="temp">-3.9℃</td>
 			</tr>
 			<tr>
-				<td>2020年</td>
+				<td class="item">2020</td>
 				<td class="temp">10.7℃</td>
 				<td class="temp">23.7℃</td>
 				<td class="temp">-1.4℃</td>
 			</tr>
 			<tr>
-				<td>2021年</td>
+				<td class="item">2021</td>
 				<td class="temp">12.8℃</td>
 				<td class="temp">25.8℃</td>
 				<td class="temp">0.5℃</td>
 			</tr>
 			<tr>
-				<td>2022年</td>
+				<td class="item">2022</td>
 				<td class="temp">13.7℃</td>
 				<td class="temp">28.8℃</td>
 				<td class="temp">-3.1℃</td>
@@ -53,12 +53,14 @@ import Layout from '../layouts/Layout.astro';
 			日中は温かくて、夜はさむ～いので長袖は持っていきましょう！
 		</p>
 		<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">おはようございます。<br><br>今日の真岡市は雨☔️<br><br>今週末は雨でお花見は難しそうですね。<br>桜🌸も雨🌧️に濡れて、ちょっと冷たそうです。。。<a href="https://twitter.com/hashtag/mokafan?src=hash&amp;ref_src=twsrc%5Etfw">#mokafan</a><a href="https://twitter.com/hashtag/%E4%BC%81%E6%A5%AD%E5%85%AC%E5%BC%8F%E3%81%8C%E6%AF%8E%E6%9C%9D%E5%9C%B0%E5%85%83%E3%81%AE%E5%A4%A9%E6%B0%97%E3%82%92%E8%A8%80%E3%81%84%E5%90%88%E3%81%86?src=hash&amp;ref_src=twsrc%5Etfw">#企業公式が毎朝地元の天気を言い合う</a><a href="https://twitter.com/hashtag/%E8%87%AA%E6%B2%BB%E4%BD%93%E3%81%A0%E3%81%91%E3%81%A9?src=hash&amp;ref_src=twsrc%5Etfw">#自治体だけど</a><a href="https://twitter.com/hashtag/%E6%A1%9C?src=hash&amp;ref_src=twsrc%5Etfw">#桜</a><a href="https://twitter.com/hashtag/%E3%82%A4%E3%83%9E%E3%82%BD%E3%83%A9?src=hash&amp;ref_src=twsrc%5Etfw">#イマソラ</a><a href="https://twitter.com/hashtag/%E5%86%99%E7%9C%9F%E5%A5%BD%E3%81%8D%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw">#写真好きと繋がりたい</a> <a href="https://t.co/Tkp1afxAcu">pic.twitter.com/Tkp1afxAcu</a></p>&mdash; 真岡市 (@mokacityhall) <a href="https://twitter.com/mokacityhall/status/1639378362044153856?ref_src=twsrc%5Etfw">March 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+        <br>
+		<div class="btn">
 		<button id="btn">真岡をもっと知りたいな！</button>
+		</div>
 		<br>
 		<br>
-		<br>
-		<br>
+		
+	
 
 
 
@@ -78,11 +80,16 @@ import Layout from '../layouts/Layout.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
+		font-family: 'Noto Sans JP', sans-serif;
+
 	}
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+	}
+	span {
+		color:rgb(188, 30, 30);
 	}
 	.graph_title {
 		text-align: center;			
@@ -96,6 +103,15 @@ import Layout from '../layouts/Layout.astro';
 	.temp {
 		text-align: right;
 		padding: 0.4rem;
+	}
+
+	#btn {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+	.btn{
+		justify-content: center;
+		text-align: center;
 	}
 
 	.text-gradient {

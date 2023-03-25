@@ -9,8 +9,7 @@ import Layout from '../layouts/Layout.astro';
 		<p class="instructions">
 		真岡市、四月の平均気温は？
 		</p>
-		<table border="2" style="border-collapse: collapse">	
-					
+		<table >						
 			<tr class="graph_title">
 				<td class="item">年度</td>
 				<td class="item">平均気温</td>
@@ -78,6 +77,10 @@ import Layout from '../layouts/Layout.astro';
 		max-width: 60ch;
 		font-family: 'Noto Sans JP', sans-serif;
 
+	}
+	table {
+		border:1px solid black;
+		border-collapse: collapse;		
 	}
 	h1 {
 		font-size: 3rem;

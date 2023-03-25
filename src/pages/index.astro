@@ -3,35 +3,56 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="よこそ真岡市へ">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>真岡のひみつ</h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+		真岡市、四月の平均気温は？
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<table border="1" style="border-collapse: collapse">	
+					
+			<tr class="graph_title">
+				<td class="item">年度</td>
+				<td class="item">平均気温</td>
+				<td class="item">最高気温</td>
+				<td class="item">最低気温</td>
+			</tr>
+			<tr>
+				<td>2018年</td>
+				<td class="temp">14.7℃</td>
+				<td class="temp">30.0℃</td>
+				<td class="temp">-0.1℃</td>
+			</tr>
+			<tr>
+				<td>2019年</td>
+				<td class="temp">11.4℃</td>
+				<td class="temp">26.6℃</td>
+				<td class="temp">-3.9℃</td>
+			</tr>
+			<tr>
+				<td>2020年</td>
+				<td class="temp">10.7℃</td>
+				<td class="temp">23.7℃</td>
+				<td class="temp">-1.4℃</td>
+			</tr>
+			<tr>
+				<td>2021年</td>
+				<td class="temp">12.8℃</td>
+				<td class="temp">25.8℃</td>
+				<td class="temp">0.5℃</td>
+			</tr>
+			<tr>
+				<td>2022年</td>
+				<td class="temp">13.7℃</td>
+				<td class="temp">28.8℃</td>
+				<td class="temp">-3.1℃</td>
+			</tr>
+		
+		</table>
+		<p class="instructions">
+			日中は温かくて、夜はさむ～いので長袖は持っていきましょう！
+		</p>
+	
 	</main>
 </Layout>
 
@@ -46,6 +67,20 @@ import Card from '../components/Card.astro';
 		font-weight: 800;
 		margin: 0;
 	}
+	.graph_title {
+		text-align: center;			
+	}
+
+	.item {
+		padding: 0.5rem;
+		font-weight: bold;
+	}
+
+	.temp {
+		text-align: right;
+		padding: 0.4rem;
+	}
+
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

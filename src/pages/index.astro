@@ -54,6 +54,8 @@ import Layout from "../layouts/Layout.astro";
       src="https://www.appsheet.com/start/ed1dd4bf-61bf-4e6e-a0a1-519fd0ef15d8#appName=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8-496136311&group=%5B%5D&page=deck&sort=%5B%5D&table=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8&view=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8"
     >
     </iframe>
+    <br />
+    <button id="photo">写真を送ろう</button>
 
     <div class="twiter">
       <blockquote class="twitter-tweet">
@@ -123,6 +125,12 @@ import Layout from "../layouts/Layout.astro";
     location.href =
       "https://www.city.moka.lg.jp/citypromotion/about_moka/7644.html";
   });
+
+  const photo = document.getElementById("photo");
+  photo.addEventListener("click", () => {
+    location.href =
+      "https://www.appsheet.com/start/ed1dd4bf-61bf-4e6e-a0a1-519fd0ef15d8#appName=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8-496136311&group=%5B%5D&page=deck&sort=%5B%5D&table=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8&view=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8";
+  });
 </script>
 
 <style>
@@ -131,19 +139,18 @@ import Layout from "../layouts/Layout.astro";
     justify-content: center;
   }
   iframe {
-    height: 600px;
+    height: 400px;
   }
   main {
     margin: 0;
     justify-content: center;
     text-align: center;
     padding: 1.5rem;
-    /* max-width: 60ch; */
+
     font-family: "Noto Sans JP", sans-serif;
   }
   table {
     border: 1px solid black;
-    /* border-collapse: collapse;		 */
   }
   .table {
     display: flex;
@@ -172,7 +179,8 @@ import Layout from "../layouts/Layout.astro";
     padding: 0.4rem;
   }
 
-  #btn {
+  #btn,
+  #photo {
     text-align: center;
     font-size: 1.2rem;
   }

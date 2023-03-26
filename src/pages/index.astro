@@ -1,153 +1,190 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="よこそ真岡市へ">
-	<main>
-		<h1><span>MooKa</span>へGO!</h1>
-		<p class="instructions">
-		真岡市、四月の平均気温は？
-		</p>
-		<table border="1" style="border-collapse: collapse">						
-			<tr class="graph_title">
-				<td class="item">年度</td>
-				<td class="item">平均気温</td>
-				<td class="item">最高気温</td>
-				<td class="item">最低気温</td>
-			</tr>
-			<tr>
-				<td class="item">2018</td>
-				<td class="temp">14.7℃</td>
-				<td class="temp">30.0℃</td>
-				<td class="temp">-0.1℃</td>
-			</tr>
-			<tr>
-				<td class="item">2019</td>
-				<td class="temp">11.4℃</td>
-				<td class="temp">26.6℃</td>
-				<td class="temp">-3.9℃</td>
-			</tr>
-			<tr>
-				<td class="item">2020</td>
-				<td class="temp">10.7℃</td>
-				<td class="temp">23.7℃</td>
-				<td class="temp">-1.4℃</td>
-			</tr>
-			<tr>
-				<td class="item">2021</td>
-				<td class="temp">12.8℃</td>
-				<td class="temp">25.8℃</td>
-				<td class="temp">0.5℃</td>
-			</tr>
-			<tr>
-				<td class="item">2022</td>
-				<td class="temp">13.7℃</td>
-				<td class="temp">28.8℃</td>
-				<td class="temp">-3.1℃</td>
-			</tr>
-		
-		</table>
-		<p class="instructions">
-			日中は温かくて、夜はさむ～いので長袖は持っていきましょう！
-		</p>
-		<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">おはようございます。<br><br>今日の真岡市は雨☔️<br><br>今週末は雨でお花見は難しそうですね。<br>桜🌸も雨🌧️に濡れて、ちょっと冷たそうです。。。<a href="https://twitter.com/hashtag/mokafan?src=hash&amp;ref_src=twsrc%5Etfw">#mokafan</a><a href="https://twitter.com/hashtag/%E4%BC%81%E6%A5%AD%E5%85%AC%E5%BC%8F%E3%81%8C%E6%AF%8E%E6%9C%9D%E5%9C%B0%E5%85%83%E3%81%AE%E5%A4%A9%E6%B0%97%E3%82%92%E8%A8%80%E3%81%84%E5%90%88%E3%81%86?src=hash&amp;ref_src=twsrc%5Etfw">#企業公式が毎朝地元の天気を言い合う</a><a href="https://twitter.com/hashtag/%E8%87%AA%E6%B2%BB%E4%BD%93%E3%81%A0%E3%81%91%E3%81%A9?src=hash&amp;ref_src=twsrc%5Etfw">#自治体だけど</a><a href="https://twitter.com/hashtag/%E6%A1%9C?src=hash&amp;ref_src=twsrc%5Etfw">#桜</a><a href="https://twitter.com/hashtag/%E3%82%A4%E3%83%9E%E3%82%BD%E3%83%A9?src=hash&amp;ref_src=twsrc%5Etfw">#イマソラ</a><a href="https://twitter.com/hashtag/%E5%86%99%E7%9C%9F%E5%A5%BD%E3%81%8D%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw">#写真好きと繋がりたい</a> <a href="https://t.co/Tkp1afxAcu">pic.twitter.com/Tkp1afxAcu</a></p>&mdash; 真岡市 (@mokacityhall) <a href="https://twitter.com/mokacityhall/status/1639378362044153856?ref_src=twsrc%5Etfw">March 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <br>
-		<div class="btn">
-		<button id="btn">真岡をもっと知りたいな！</button>
-		</div>
-		<br>	
-		<p>みんな大好き<span>マクドナルド</span></p>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25678.878707083895!2d139.97161445203443!3d36.436771747891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f5802be769497%3A0x36df56debc0914d2!2z44Oe44Kv44OJ44OK44Or44OJIO-8ku-8me-8lOecn-WyoeW6lw!5e0!3m2!1sja!2sjp!4v1679742818338!5m2!1sja!2sjp" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		<br>
-		<br>
-		<span>栃木人</span>のトリセツ</p>
-		<iframe width="300" height="350" src="https://www.youtube.com/embed/yHvlItPxNX8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				
-		<script>
-			const btn = document.getElementById('btn');
-			btn.addEventListener('click',()=>{
-				location.href = 'https://www.city.moka.lg.jp/citypromotion/about_moka/7644.html';
-				
-			})
-		</script>
-	
-	</main>
+  <main>
+    <h1><span>MooKa</span>へGO!</h1>
+    <p class="instructions">真岡市、四月の平均気温は？</p>
+    <table border="1" style="border-collapse: collapse">
+      <tr class="graph_title">
+        <td class="item">年度</td>
+        <td class="item">平均気温</td>
+        <td class="item">最高気温</td>
+        <td class="item">最低気温</td>
+      </tr>
+      <tr>
+        <td class="item">2018</td>
+        <td class="temp">14.7℃</td>
+        <td class="temp">30.0℃</td>
+        <td class="temp">-0.1℃</td>
+      </tr>
+      <tr>
+        <td class="item">2019</td>
+        <td class="temp">11.4℃</td>
+        <td class="temp">26.6℃</td>
+        <td class="temp">-3.9℃</td>
+      </tr>
+      <tr>
+        <td class="item">2020</td>
+        <td class="temp">10.7℃</td>
+        <td class="temp">23.7℃</td>
+        <td class="temp">-1.4℃</td>
+      </tr>
+      <tr>
+        <td class="item">2021</td>
+        <td class="temp">12.8℃</td>
+        <td class="temp">25.8℃</td>
+        <td class="temp">0.5℃</td>
+      </tr>
+      <tr>
+        <td class="item">2022</td>
+        <td class="temp">13.7℃</td>
+        <td class="temp">28.8℃</td>
+        <td class="temp">-3.1℃</td>
+      </tr>
+    </table>
+    <p class="instructions">
+      日中は温かくて、夜はさむ～いので長袖は持っていきましょう！
+    </p>
+    <blockquote class="twitter-tweet">
+      <p lang="ja" dir="ltr">
+        真岡育ちの”もおかっ子”は、いちご🍓の品種当てができる人も多いらしい⁉️<a
+          href="https://twitter.com/hashtag/mokafan?src=hash&ref_src=twsrc%5Etfw"
+          >#mokafan</a
+        ><a
+          href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94%E7%8E%8B%E5%9B%BD%E6%A0%83%E6%9C%A8%E3%81%AE%E9%A6%96%E9%83%BD%E3%82%82%E3%81%8A%E3%81%8B?src=hash&ref_src=twsrc%5Etfw"
+          >#いちご王国栃木の首都もおか</a
+        ><a
+          href="https://twitter.com/hashtag/%E6%97%A5%E6%9C%AC%E4%B8%80%E3%81%AE%E3%81%84%E3%81%A1%E3%81%94%E3%81%AE%E3%81%BE%E3%81%A1?src=hash&ref_src=twsrc%5Etfw"
+          >#日本一のいちごのまち</a
+        ><a
+          href="https://twitter.com/hashtag/%E3%82%82%E3%81%8A%E3%81%8B%E3%81%97%E3%81%A8%E8%AA%AD%E3%81%BF%E3%81%BE%E3%81%99?src=hash&ref_src=twsrc%5Etfw"
+          >#もおかしと読みます</a
+        ><a
+          href="https://twitter.com/hashtag/%E6%A0%83%E6%9C%A8%E7%9C%8C?src=hash&ref_src=twsrc%5Etfw"
+          >#栃木県</a
+        ><a
+          href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94?src=hash&ref_src=twsrc%5Etfw"
+          >#いちご</a
+        ><a
+          href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94%E3%81%AE%E9%A3%9F%E3%81%B9%E6%AF%94%E3%81%B9?src=hash&ref_src=twsrc%5Etfw"
+          >#いちごの食べ比べ</a
+        >
+        <a href="https://t.co/5DgEJECmb5">pic.twitter.com/5DgEJECmb5</a>
+      </p>&mdash; 真岡市 (@mokacityhall) <a
+        href="https://twitter.com/mokacityhall/status/1639809394555715587?ref_src=twsrc%5Etfw"
+        >March 26, 2023</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"
+    ></script>
+    <br />
+    <div class="btn">
+      <button id="btn">真岡をもっと知りたいな！</button>
+    </div>
+    <br />
+    <p>みんな大好き<span>マクドナルド</span></p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25678.878707083895!2d139.97161445203443!3d36.436771747891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f5802be769497%3A0x36df56debc0914d2!2z44Oe44Kv44OJ44OK44Or44OJIO-8ku-8me-8lOecn-WyoeW6lw!5e0!3m2!1sja!2sjp!4v1679742818338!5m2!1sja!2sjp"
+      width="300"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br />
+    <br />
+    <span>栃木人</span>のトリセツ
+  </main>
+  <iframe
+    width="300"
+    height="350"
+    src="https://www.youtube.com/embed/yHvlItPxNX8"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+      location.href =
+        "https://www.city.moka.lg.jp/citypromotion/about_moka/7644.html";
+    });
+  </script>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-		font-family: 'Noto Sans JP', sans-serif;
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  table {
+    border: 1px solid black;
+    /* border-collapse: collapse;		 */
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  span {
+    color: rgb(188, 30, 30);
+  }
+  .graph_title {
+    text-align: center;
+  }
 
-	}
-	table {
-		border:1px solid black;
-		/* border-collapse: collapse;		 */
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	span {
-		color:rgb(188, 30, 30);
-	}
-	.graph_title {
-		text-align: center;			
-	}
+  .item {
+    padding: 0.3rem;
+    font-weight: bold;
+  }
 
-	.item {
-		padding: 0.3rem;
-		font-weight: bold;
-	}
+  .temp {
+    text-align: right;
+    padding: 0.4rem;
+  }
 
-	.temp {
-		text-align: right;
-		padding: 0.4rem;
-	}
+  #btn {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .btn {
+    justify-content: center;
+    text-align: center;
+  }
 
-	#btn {
-		text-align: center;
-		font-size: 1.2rem;
-	}
-	.btn{
-		justify-content: center;
-		text-align: center;
-	}
-
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>

@@ -5,7 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="よこそ真岡市へ">
   <main>
     <h1><span>MooKa</span>へGo!</h1>
+    <span><div class="date"></div></span>
     <p>真岡市、四月の平均気温は？</p>
+    <p>夜は結構寒そうなので長袖は持っていきましょう！</p>
     <div class="table">
       <table border="1" style="border-collapse: collapse">
         <tr class="graph_title">
@@ -46,9 +48,7 @@ import Layout from "../layouts/Layout.astro";
         </tr>
       </table>
     </div>
-    <p class="instructions">
-      日中は温かくて、夜はさむ～いので長袖は持っていきましょう！
-    </p>
+    <hr>
 
     <iframe
       src="https://www.appsheet.com/start/ed1dd4bf-61bf-4e6e-a0a1-519fd0ef15d8#appName=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8-496136311&group=%5B%5D&page=deck&sort=%5B%5D&table=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8&view=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8"
@@ -58,36 +58,7 @@ import Layout from "../layouts/Layout.astro";
     <button id="photo">写真を送ろう</button>
 
     <div class="twiter">
-      <blockquote class="twitter-tweet">
-        <p lang="ja" dir="ltr">
-          真岡育ちの”もおかっ子”は、いちご🍓の品種当てができる人も多いらしい⁉️<a
-            href="https://twitter.com/hashtag/mokafan?src=hash&ref_src=twsrc%5Etfw"
-            >#mokafan</a
-          ><a
-            href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94%E7%8E%8B%E5%9B%BD%E6%A0%83%E6%9C%A8%E3%81%AE%E9%A6%96%E9%83%BD%E3%82%82%E3%81%8A%E3%81%8B?src=hash&ref_src=twsrc%5Etfw"
-            >#いちご王国栃木の首都もおか</a
-          ><a
-            href="https://twitter.com/hashtag/%E6%97%A5%E6%9C%AC%E4%B8%80%E3%81%AE%E3%81%84%E3%81%A1%E3%81%94%E3%81%AE%E3%81%BE%E3%81%A1?src=hash&ref_src=twsrc%5Etfw"
-            >#日本一のいちごのまち</a
-          ><a
-            href="https://twitter.com/hashtag/%E3%82%82%E3%81%8A%E3%81%8B%E3%81%97%E3%81%A8%E8%AA%AD%E3%81%BF%E3%81%BE%E3%81%99?src=hash&ref_src=twsrc%5Etfw"
-            >#もおかしと読みます</a
-          ><a
-            href="https://twitter.com/hashtag/%E6%A0%83%E6%9C%A8%E7%9C%8C?src=hash&ref_src=twsrc%5Etfw"
-            >#栃木県</a
-          ><a
-            href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94?src=hash&ref_src=twsrc%5Etfw"
-            >#いちご</a
-          ><a
-            href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94%E3%81%AE%E9%A3%9F%E3%81%B9%E6%AF%94%E3%81%B9?src=hash&ref_src=twsrc%5Etfw"
-            >#いちごの食べ比べ</a
-          >
-          <a href="https://t.co/5DgEJECmb5">pic.twitter.com/5DgEJECmb5</a>
-        </p>&mdash; 真岡市 (@mokacityhall) <a
-          href="https://twitter.com/mokacityhall/status/1639809394555715587?ref_src=twsrc%5Etfw"
-          >March 26, 2023</a
-        >
-      </blockquote>
+      <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">他では味わえない完熟いちご🍓は贈り物🎁にも最適.｡ ｡.:*･ﾟ♡★♡<a href="https://twitter.com/hashtag/mokafan?src=hash&amp;ref_src=twsrc%5Etfw">#mokafan</a><a href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94%E7%8E%8B%E5%9B%BD%E6%A0%83%E6%9C%A8%E3%81%AE%E9%A6%96%E9%83%BD%E3%82%82%E3%81%8A%E3%81%8B?src=hash&amp;ref_src=twsrc%5Etfw">#いちご王国栃木の首都もおか</a><a href="https://twitter.com/hashtag/%E6%97%A5%E6%9C%AC%E4%B8%80%E3%81%AE%E3%81%84%E3%81%A1%E3%81%94%E3%81%AE%E3%81%BE%E3%81%A1?src=hash&amp;ref_src=twsrc%5Etfw">#日本一のいちごのまち</a><a href="https://twitter.com/hashtag/%E3%82%82%E3%81%8A%E3%81%8B%E3%81%97%E3%81%A8%E8%AA%AD%E3%81%BF%E3%81%BE%E3%81%99?src=hash&amp;ref_src=twsrc%5Etfw">#もおかしと読みます</a><a href="https://twitter.com/hashtag/%E6%A0%83%E6%9C%A8%E7%9C%8C?src=hash&amp;ref_src=twsrc%5Etfw">#栃木県</a><a href="https://twitter.com/hashtag/%E3%81%84%E3%81%A1%E3%81%94?src=hash&amp;ref_src=twsrc%5Etfw">#いちご</a><a href="https://twitter.com/hashtag/%E8%B4%88%E3%82%8A%E7%89%A9?src=hash&amp;ref_src=twsrc%5Etfw">#贈り物</a><a href="https://twitter.com/hashtag/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#プレゼント</a> <a href="https://t.co/Cta6rpHJiz">pic.twitter.com/Cta6rpHJiz</a></p>&mdash; 真岡市 (@mokacityhall) <a href="https://twitter.com/mokacityhall/status/1641258947981070336?ref_src=twsrc%5Etfw">March 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"
@@ -133,6 +104,20 @@ import Layout from "../layouts/Layout.astro";
     location.href =
       "https://www.appsheet.com/start/ed1dd4bf-61bf-4e6e-a0a1-519fd0ef15d8#appName=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8-496136311&group=%5B%5D&page=deck&sort=%5B%5D&table=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8&view=%E7%9C%9F%E5%B2%A1%E8%A8%98%E5%BF%B5%E9%A4%A8";
   });
+
+  // 日にちを表示
+  const today = new Date();
+  const date_today =
+  today.getFullYear() +
+  "年" +
+  (today.getMonth() + 1 + "月") +
+  today.getDate() +
+  "日";
+
+const date = document.querySelector(".date");
+date.textContent =  date_today;
+
+
 </script>
 
 <style>

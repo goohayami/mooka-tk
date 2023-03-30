@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro";
     <h1><span>MooKa</span>へGo!</h1>
     <span><div class="date"></div></span>
     <p>真岡市、四月の平均気温は？</p>
-    <p>夜は結構寒そうなので長袖は持っていきましょう！</p>
+    <p>夜は寒いよ。長袖を持っていこう！</p>
     <div class="table">
       <table border="1" style="border-collapse: collapse">
         <tr class="graph_title">
@@ -65,19 +65,13 @@ import Layout from "../layouts/Layout.astro";
     ></script>
     <br />
     <div class="btn">
-      <button id="btn">真岡をもっと知りたいな！</button>
+      <button id="btn">真岡市広報</button>
     </div>
     <br />
-    <p>みんな大好き<span>マクドナルド</span></p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25678.878707083895!2d139.97161445203443!3d36.436771747891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f5802be769497%3A0x36df56debc0914d2!2z44Oe44Kv44OJ44OK44Or44OJIO-8ku-8me-8lOecn-WyoeW6lw!5e0!3m2!1sja!2sjp!4v1679742818338!5m2!1sja!2sjp"
-      width="300"
-      height="350"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>// みんな大好き<span>マヌルネコ</span>の歌 //</p>
+    <video controls width="300" height="150" src="./asset/manul.mp4"></video>
     <br />
+
 
     <p><span>栃木人</span>のトリセツ</p>
     <iframe
@@ -121,6 +115,9 @@ date.textContent =  date_today;
 </script>
 
 <style>
+  video {
+    margin: 0;
+  }
   .twiter {
     display: flex;
     justify-content: center;
